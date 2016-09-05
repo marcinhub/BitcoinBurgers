@@ -2,7 +2,7 @@
 //  BitcoinBurgersTests.swift
 //  BitcoinBurgersTests
 //
-//  Created by Marcin on 04/09/2016.
+//  Created by Marcin on 05/09/2016.
 //  Copyright © 2016 MarcinSteciuk. All rights reserved.
 //
 
