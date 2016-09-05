@@ -14,6 +14,9 @@
 		015D68DE1D7DA78A0041AF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015D68DC1D7DA78A0041AF09 /* LaunchScreen.storyboard */; };
 		015D68E91D7DA78A0041AF09 /* BitcoinBurgersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D68E81D7DA78A0041AF09 /* BitcoinBurgersTests.swift */; };
 		015D68F41D7DA78A0041AF09 /* BitcoinBurgersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D68F31D7DA78A0041AF09 /* BitcoinBurgersUITests.swift */; };
+		01B429921D7DB03800BA2EC9 /* BitcoinBurgersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B429911D7DB03800BA2EC9 /* BitcoinBurgersService.swift */; };
+		01B429941D7DB0CF00BA2EC9 /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B429931D7DB0CF00BA2EC9 /* Burger.swift */; };
+		01B429961D7E2D9700BA2EC9 /* BitcoinBurgersNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B429951D7E2D9700BA2EC9 /* BitcoinBurgersNetwork.swift */; };
 		2D9AC437532C73E5E1BF5FB0 /* Pods_BitcoinBurgersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1367CD30B64FC4EC78B642D4 /* Pods_BitcoinBurgersTests.framework */; };
 		5502670594C31EF14DDA1DE5 /* Pods_BitcoinBurgersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69A1475D74BF1CE6879CB01 /* Pods_BitcoinBurgersUITests.framework */; };
 		EB9662DA2FC3130767245CE3 /* Pods_BitcoinBurgers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BED27C565BDD925BD38CF2 /* Pods_BitcoinBurgers.framework */; };
@@ -50,6 +53,9 @@
 		015D68EF1D7DA78A0041AF09 /* BitcoinBurgersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinBurgersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		015D68F31D7DA78A0041AF09 /* BitcoinBurgersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinBurgersUITests.swift; sourceTree = "<group>"; };
 		015D68F51D7DA78A0041AF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B429911D7DB03800BA2EC9 /* BitcoinBurgersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinBurgersService.swift; sourceTree = "<group>"; };
+		01B429931D7DB0CF00BA2EC9 /* Burger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
+		01B429951D7E2D9700BA2EC9 /* BitcoinBurgersNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinBurgersNetwork.swift; sourceTree = "<group>"; };
 		1367CD30B64FC4EC78B642D4 /* Pods_BitcoinBurgersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinBurgersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE566F24AAF5D62E1E3EC81 /* Pods-BitcoinBurgers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinBurgers.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinBurgers/Pods-BitcoinBurgers.release.xcconfig"; sourceTree = "<group>"; };
 		46BED27C565BDD925BD38CF2 /* Pods_BitcoinBurgers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinBurgers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				015D68D31D7DA78A0041AF09 /* AppDelegate.swift */,
+				01B429911D7DB03800BA2EC9 /* BitcoinBurgersService.swift */,
+				01B429951D7E2D9700BA2EC9 /* BitcoinBurgersNetwork.swift */,
+				01B429931D7DB0CF00BA2EC9 /* Burger.swift */,
 				015D68D51D7DA78A0041AF09 /* ViewController.swift */,
 				015D68D71D7DA78A0041AF09 /* Main.storyboard */,
 				015D68DA1D7DA78A0041AF09 /* Assets.xcassets */,
@@ -428,7 +437,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				015D68D61D7DA78A0041AF09 /* ViewController.swift in Sources */,
+				01B429921D7DB03800BA2EC9 /* BitcoinBurgersService.swift in Sources */,
+				01B429941D7DB0CF00BA2EC9 /* Burger.swift in Sources */,
 				015D68D41D7DA78A0041AF09 /* AppDelegate.swift in Sources */,
+				01B429961D7E2D9700BA2EC9 /* BitcoinBurgersNetwork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

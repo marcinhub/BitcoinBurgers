@@ -1,0 +1,65 @@
+//
+//  BitcoinBurgersNetwork.swift
+//  BitcoinBurgers
+//
+//  Created by Marcin on 05/09/2016.
+//  Copyright © 2016 MarcinSteciuk. All rights reserved.
+//
+
+import Foundation
+import Alamofire
+
+struct Network {
+    /*
+    let headerContentTypeKey = "Content-Type"
+    let headerAcceptKey = "Accept"
+    let headerContentJSONValue = "application/json"
+    let headerTraktVersionKey = "trakt-api-version"
+    let headerTraktApplicationKey = "trakt-api-key"
+    
+    let apiKey = "0e7e55d561c7e688868a5ea7d2c82b17e59fde95fbc2437e809b1449850d4162"
+    let apiVersionKey = "2"
+    
+    let scheme: String
+    let host: String
+    let path: String
+    let queryParameters: [NSURLQueryItem]
+    
+    init(scheme: String, host: String, path: String, queryParameters: [NSURLQueryItem]) {
+        
+        self.scheme = scheme
+        self.host = host
+        self.path = path
+        self.queryParameters = queryParameters
+    }
+    */
+    func download(completion:(([[String: AnyObject]]?, error: NSError?) -> ())) {
+        /*
+        if let url = constructURL() {
+            
+            let mutableURLRequest = NSMutableURLRequest(URL: url)
+            
+            let headers = [headerContentTypeKey: headerContentJSONValue, headerAcceptKey:  headerContentJSONValue, headerTraktVersionKey: apiVersionKey, headerTraktApplicationKey: apiKey]
+            */
+        
+        Alamofire.request(.GET, "http://coffeeport.herokuapp.com/burgers/?format=json")
+            .responseJSON { response in switch response.result {
+                
+            case .Success(let JSON):
+                
+                print("Success with JSON: \(JSON)")
+                
+                completion(JSON as? [[String : AnyObject]], error: nil)
+           
+            case .Failure(let error):
+                
+                print("Request failed with error: \(error)")
+                
+                completion(nil, error: error)
+                }
+        }    
+        
+        }
+    }
+    
+
