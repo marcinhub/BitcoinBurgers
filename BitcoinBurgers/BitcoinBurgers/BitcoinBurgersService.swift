@@ -15,7 +15,7 @@ import RealmSwift
 class BitcoinBurgersService: UIViewController {
 
     
-    func getTrendingMovies(completion:(([Burger]?, NSError?) -> ())) {
+    func getBitcoinBurgers(completion:(([Burger]?, NSError?) -> ())) {
         
         let network = Network()
         
@@ -27,6 +27,7 @@ class BitcoinBurgersService: UIViewController {
                     
                     let burgerParser = BitcoinBurgersParser(bitcoinBurgersArray: json)
                     let burgers = burgerParser.getBurgers()
+                    print(burgers)
                     
                     completion(burgers, nil)
                 }
@@ -41,9 +42,9 @@ class BitcoinBurgersService: UIViewController {
     
     struct BitcoinBurgersParser {
    
-        let bitcoinBurgersArray: [[String: AnyObject]]
+        let bitcoinBurgersArray: [String: AnyObject]
         
-        init(bitcoinBurgersArray: [[String: AnyObject]]) {
+        init(bitcoinBurgersArray: [String: AnyObject]) {
         
             self.bitcoinBurgersArray = bitcoinBurgersArray
         }
@@ -66,7 +67,9 @@ class BitcoinBurgersService: UIViewController {
                 
                 products.append(product)
             }
+            print(products)
             return products
+
         }
 }
 }

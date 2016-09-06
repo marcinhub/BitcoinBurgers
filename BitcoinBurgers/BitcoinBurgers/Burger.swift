@@ -9,24 +9,7 @@
 import Foundation
 import RealmSwift
 
-/*
- class Attribute : Object{
- dynamic var title = ""
- dynamic var id = ""
- dynamic var unit = ""
- dynamic var value = ""
- }
- 
- class ImageProperties : Object{
- dynamic var url = ""
- dynamic var width = 0
- }
- 
- 
- class Image : Object{
- let 750 = ImageProperties(value: ["Jane", 30])
- }
- */
+
 class Burger {
     var id : Int = 0
     var price : Int = 0
